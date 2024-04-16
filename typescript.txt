@@ -1,0 +1,56 @@
+TS changes behaviour of js from dynamic to static type language.
+
+1. static vs dynamic typed language 
+
+dynamic languages doesn't need to tell what type of variable it should be.
+example in js,
+var a =100, 
+where as in static type language we need to specify the type of variable
+for example in c/c++/java,
+int a =100
+
+in dynamic typed language type checking is done at run time
+
+Advantage:
+static languages are self documented and helps to find errors easily.
+
+disadvantage:
+Need to write more code and difficult to understand.
+It has slower development process.
+
+In short, static languages prevent bugs where as dynamic typed helps in write
+faster code.
+
+
+2. Strong vs weak typing
+
+weak type lang js: 
+var a ="hello"
+a+1
+output: hello1
+js being weakly typed converts 1 from int to string
+and returns result as a string
+
+but in strongly typed language if we do
+a = "hello"
+a=a+1
+it will throw error as it cannot concatenate string and integer.
+
+3. Static typing in js
+
+flow--->babel compiler--->js
+
+TS--->ts compiler--->js
+
+elm--->elm comiler-->js
+
+RE(Reasonml)--> RE compiler-->js
+
+TS compiler is itself written in TS and compiled to JS 
+
+
+Commands:
+npm i typescript
+tsc filename.ts
+for tsconfig --> tsc --init
+for watch mode --> tsc filename.ts --watch
